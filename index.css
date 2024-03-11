@@ -504,7 +504,7 @@ body {
 
 .phone-footer-mob {
     position: fixed;
-    height: 80px;
+    height: 70px;
     bottom: 0;
     width: 100%;
     background-color: #efefef;
@@ -530,7 +530,7 @@ body {
     bottom: 10px;
     left: 80%;
     color: #7b838d;
-    font-size: 3rem;
+    font-size: 2.5rem;
     transition: all 0.3s ease 0s;
 }
 .seventy-percent-width::placeholder {
