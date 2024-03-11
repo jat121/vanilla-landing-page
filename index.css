@@ -462,7 +462,7 @@ body {
 }
 
 .height-full {
-    height: 100vh !important;
+    height: calc((100vh - 110px)) !important;
 }
 
 .remove-margin {
@@ -504,7 +504,7 @@ body {
 
 .phone-footer-mob {
     position: absolute;
-    height: calc(10%);
+    height: 80px;
     bottom: 0;
     width: 100%;
     background-color: #efefef;
@@ -529,7 +529,7 @@ body {
     bottom: 10px;
     left: 80%;
     color: #7b838d;
-    font-size: 3.5rem;
+    font-size: 3rem;
     transition: all 0.3s ease 0s;
 }
 .seventy-percent-width::placeholder {
