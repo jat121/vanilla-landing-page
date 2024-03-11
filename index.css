@@ -518,21 +518,22 @@ body {
 
 .phone-footer-input-mob {
     position: absolute;
-    bottom: 7px;
     border: 1px solid #cfcfd2;
-    border-radius: 30px;
     font-size: 2rem;
-    margin: .2rem;
+    width: 100% !important;
+    height: 70px !important;
+    box-shadow: 2px 2px 2px 2px grey;
 }
 
-.phone-footer-icons-mob{
+.phone-footer-icons-mob {
     position: absolute;
     bottom: 10px;
-    left: 80%;
+    left:85% !important;
     color: #7b838d;
     font-size: 2.5rem;
     transition: all 0.3s ease 0s;
 }
+
 .seventy-percent-width::placeholder {
     font: 2rem sans-serif;
     font-style: italic;
@@ -557,7 +558,7 @@ body {
         content: none !important;
     }
 
-   
+
 }
 
 @media only screen and (min-width: 768px) {
