@@ -158,6 +158,17 @@ body {
     margin-bottom: 5px;
 }
 
+.font-small-italic-mob {
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-style: italic;
+}
+
+.font-small-mob {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
 /* HEADER ICONS AND TIME */
 .phone-header-time {
     position: absolute;
