@@ -523,15 +523,15 @@ body {
 
 
 .my-icons-mob {
-    font-size: 2.8rem;
+    font-size: 4.8rem;
     color: #fff;
     display: table;
     margin: auto;
 }
 
 .contact-image-mob {
-    width: 75px;
-    height: 75px;
+    width: 55px;
+    height: 55px;
     background-color: #b4b4ba;
     box-shadow: 0 0 0 3px #b4b4ba;
     border-radius: 100%;
@@ -575,8 +575,8 @@ body {
 }
 
 .phone-footer-input-mob::placeholder {
-    font-size: 2rem;
-    font-weight: 500;
+    font-size: 1.5rem;
+    font-weight: 400;
     font-style: italic;
 }
 
