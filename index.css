@@ -134,9 +134,28 @@ body {
 .phone-header {
     position: absolute;
     width: 100%;
-    height: 50px;
+    height: 100px;
     top: 0;
     background-color: #f4f4f4;
+}
+
+.phone-header-mob {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    top: 0;
+    background-color: #f4f4f4;
+}
+
+.font-small-italic {
+    font-size: 10px;
+    margin-bottom: 5px;
+    font-style: italic;
+}
+
+.font-small {
+    font-size: 10px;
+    margin-bottom: 5px;
 }
 
 /* HEADER ICONS AND TIME */
@@ -201,6 +220,12 @@ body {
     padding: 5px 10px;
     margin-bottom: 10px;
     border-radius: 10px;
+}
+
+.domain {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .message p {
@@ -282,7 +307,7 @@ body {
 .phone-footer-icons {
     position: absolute;
     bottom: 10px;
-    left: 15px;
+    left: 80%;
     color: #7b838d;
     font-size: 25px;
     transition: all 0.3s ease 0s;
@@ -295,11 +320,17 @@ body {
 .phone-footer-input {
     position: absolute;
     bottom: 7px;
-    left: 50px;
     height: 30px;
-    border: 1px solid #cfcfd2;
+    border: none;
     padding: 3px 10px;
     border-radius: 30px;
+    background-color: #efefef;
+}
+
+.phone-footer-input::placeholder {
+    font-size: 15px;
+    font-weight: 500;
+    font-style: italic;
 }
 
 .phone-footer-input p {
@@ -524,11 +555,14 @@ body {
 
 .phone-footer-input-mob {
     position: absolute;
-    border: 1px solid #cfcfd2;
+    height: 70px;
+    border: none;
+    padding: 3px 10px;
+    border-radius: 30px;
+    background-color: #efefef;
+    width: 100%;
     font-size: 2rem;
-    width: 100% !important;
-    height: 70px !important;
-    box-shadow: 2px 2px 2px 2px grey;
+
 }
 
 .phone-footer-icons-mob {
@@ -540,8 +574,9 @@ body {
     transition: all 0.3s ease 0s;
 }
 
-.seventy-percent-width::placeholder {
-    font: 2rem sans-serif;
+.phone-footer-input-mob::placeholder {
+    font-size: 2rem;
+    font-weight: 500;
     font-style: italic;
 }
 
