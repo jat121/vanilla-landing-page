@@ -685,9 +685,9 @@ body {
 
 .bell-mob{
     display:block;
-    width: 80px;
-    height: 80px;
-    font-size: 80px;
+    width: 60px;
+    height: 60px;
+    font-size: 60px;
     margin: 5px auto 0;
     color: #40A2E3;
     -webkit-animation: ring 4s .7s ease-in-out infinite;
