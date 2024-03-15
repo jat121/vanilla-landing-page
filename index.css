@@ -168,6 +168,11 @@ body {
     font-size: 10px;
     margin-bottom: 5px;
 }
+.outer-domain{
+    border-top-left-radius: 20%;
+    border-top: 2px solid white;
+    border-top-right-radius: 20%;
+}
 
 /* HEADER ICONS AND TIME */
 .phone-header-time {
@@ -477,7 +482,9 @@ body {
     cursor: pointer;
     outline: none;
 }
-
+.mobile-container{
+    
+}
 .button-btn-round-two {
     height: 40px;
     font-size: 15px;
