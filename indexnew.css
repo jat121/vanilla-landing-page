@@ -2,7 +2,7 @@ html,
 body {
     height: 100%;
     margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-color: #EA4C89;
 }
 
@@ -54,11 +54,11 @@ body {
 }
 
 .font-size-2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .font-bold {
-    font-weight: 600;
+    font-weight: 550;
 }
 
 .font-white {
@@ -77,19 +77,20 @@ body {
 }
 
 .logo-shadow {
-    box-shadow: -.5px -.5px #8a8989, 0 6px 20px 0 rgba(0, 0, 0, .3);
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, .15);
     /* not working need to figure something out */
 }
 
 .br-2 {
-    border-radius: 20px;
+    border-radius: 0.5rem;
 }
 
 .logo-box {
-    width: 74px;
+    width: 50px;
     display: block;
-    height: 74px;
+    height: 50px;
     text-align: center;
+    line-height: 70px;
 }
 
 
