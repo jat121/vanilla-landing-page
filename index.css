@@ -215,7 +215,8 @@ body {
 .contact-image-logo-mob {
     overflow: hidden;
     font-size: 3.5rem;
-    color: #1059a5
+    color: #1059a5;
+    margin: .5rem;
 }
 
 .contact-image .my-icons {
