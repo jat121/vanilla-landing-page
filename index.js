@@ -8,7 +8,6 @@ fetch("./flags.json")
       .then((res) => res.json())
       .then((data) => {
         userCountry = data.country;
-
         const flagElement = document.getElementById("user-flag");
         const countrynameElement = document.getElementById("user-country");
         countrynameElement.innerText = userCountry;
