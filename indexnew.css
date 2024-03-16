@@ -153,6 +153,7 @@ body {
     justify-content: space-around;
     width: 100%;
     border-bottom: .5px solid #7b838d;
+    height: 200px;
 }
 
 .user-info {
@@ -212,6 +213,15 @@ body {
     display: block;
     width: 80px;
     height: 80px;
+    overflow: hidden;
+}
+
+.flag-box {
+    border: 5px solid white;
+    border-radius: 100%;
+    display: block;
+    width: 25px;
+    height: 25px;
     overflow: hidden;
 }
 
