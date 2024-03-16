@@ -28,7 +28,7 @@
         
         <div class="content">
             <div class="content-body">
-                <span class="font-small" style="margin-top: 16px; font-size: 1rem;">
+                <span class="font-bold" style="margin-top: 16px; font-size: 1rem;">
                     Invited by
                 </span>
                 <div class="details">
@@ -39,29 +39,47 @@
                             </span>
                         </div>
                         <span>
-                            <b style="font-size: 18px;">
+                            <b style="font-size: 24px;">
                                 John Doe
                             </b>
                         </span>
                         <span class="font-small-italic-mob" style="color:#EA4C89;">
                             @johndoe123
                         </span>
-                        <span class="font-small-mob">
+                        <span class="font-small font-italic">
                             Joined March, 2024
                         </span>
                     </div>
                     <div class="right">
                         <div class="user-info">
                             <div class="friends">
-                                <span class="font-small-mob">4</span>
-                                <span class="font-small-mob">Friends</span>
+                                <span class="font-bold">4</span>
+                                <span class="">Friends</span>
                             </div>
-                            <div class="location">
-                                <span class="font-small-mob">Flag</span>
-                                <span class="font-small-mob">London</span>
+                            <div class="friends">
+                                <span class="font-bold">
+                                    <img id="user-flag" src="#" alt="logo" />
+                                </span>
+                                <span id="user-country" class="">London</span>
+                            </div>
+                            <div class="videos">
+                                <span class="font-bold">4</span>
+                                <span class="">Videos</span>
+                            </div>
+                            <div class="photos">
+                                <span class="font-bold">4</span>
+                                <span class="">Photos</span>
                             </div>
                         </div>
-                        <div class="notification"></div>
+                        <div class="notification">
+                            <span class="bell">
+                                <i class="fa-solid fa-bell"></i>
+                            </span>
+                            <p class="notification-text font-bold font-italic">
+                                We have notified Lisa that you've joined the chat.
+                                Please verify your account to enable message sending.
+                            </p>
+                        </div>
                         
                     </div>
                 </div>
@@ -72,5 +90,6 @@
 
     </div>
 </body>
-
+<script src="index.js"></script>
+<script src="flags.json"></script>
 </html>
