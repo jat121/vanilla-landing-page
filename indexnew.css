@@ -144,12 +144,13 @@ body {
     transform-origin: 50% 4px;
 }
 
-.details{
+.details {
     display: flex;
     justify-content: space-around;
     width: 100%;
 }
-.user-info{
+
+.user-info {
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
@@ -159,7 +160,8 @@ body {
 .font-small {
     font-size: 12px;
 }
-.friends{
+
+.friends {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -179,34 +181,35 @@ body {
     margin-right: 1rem;
 }
 
-.location{
+.location {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.left{
+.left {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.right{
+.right {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 50%;
 }
-.profile-box{
-    width: 3rem;
-    display: block;
-    height: 3rem;
-    text-align: center;
-    line-height: 70px;
-    background-color: #EA4C89;
+
+.profile-box {
     border: 5px solid white;
+    border-radius: 100%;
+    display: block;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
 }
-.br-4{
+
+.br-4 {
     border-radius: 1rem;
 }
 
@@ -591,17 +594,15 @@ body {
     justify-content: center;
 }
 
-.profile-box-desktop{
-    width: 2rem;
-    display: block;
-    height: 2rem;
-    text-align: center;
-    line-height: 50px;
-    background-color: #EA4C89;
+.profile-box-desktop {
     border: 5px solid white;
+    display: block;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
 }
 
-.user-info-desktop{
+.user-info-desktop {
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
