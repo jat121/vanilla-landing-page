@@ -529,10 +529,10 @@ body {
 
 .chat-footer {
     position: fixed;
-    height: 70px;
-    bottom: 0;
-    width: 100%;
-    background-color: #efefef;
+    height: calc(100% - 90%);
+    bottom: 20px;
+    left: 15px;
+    width: calc(100% - 50px);
 }
 
 .chat-box {
@@ -540,22 +540,20 @@ body {
     height: 70px;
     border: none;
     padding: 3px 10px;
-    border-radius: 30px;
-    background-color: #efefef;
+    border-radius: 15px;
+    box-shadow: rgba(17, 17, 26, 0.16) 0px 4px 16px 0px inset, rgba(17, 17, 26, 0.05) 0px 8px 32px 0px;
+    box-shadow: rgba(17, 17, 26, .5) 0px 0px 10px 1px inset, rgba(17, 17, 26, 0.05) 0px 8px 32px 0px;
+    box-shadow: rgba(17, 17, 26, 0.65) 1px 1px 10px -4px inset;
     width: 100%;
-    font-size: 2rem;
-}
-
-.chat-box::placeholder {
-    font-style: italic;
+    font-size: 1.2rem;
 }
 
 .chat-icons {
     position: absolute;
     bottom: 10px;
-    left: 85% !important;
+    left: 92% !important;
     color: #7b838d;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     transition: all 0.3s ease 0s;
 }
 
