@@ -107,7 +107,8 @@ body {
 
 .notification {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
 }
 
 .notification-text {
@@ -120,6 +121,7 @@ body {
     height: 40px;
     font-size: 40px;
     margin: 5px auto 0;
+    margin-right: 5px !important;
     color: #EA4C89;
     -webkit-animation: ring 4s .7s ease-in-out infinite;
     -webkit-transform-origin: 50% 4px;
@@ -610,9 +612,9 @@ body {
 }
 
 .btn-btn-round {
-    width: 200px;
-    height: 70px;
-    font-size: 20px;
+    width: 120px;
+    height: 50px;
+    font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 2.5px;
     font-weight: 750;
