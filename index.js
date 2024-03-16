@@ -10,7 +10,7 @@ fetch("./flags.json")
         userCountry = data.country;
         const flagElement = document.getElementById("user-flag");
         const countrynameElement = document.getElementById("user-country");
-        countrynameElement.innerText = userCountry;
-        flagElement.src = countriesFlags[userCountry].mini;		// for small sized flag
+        countrynameElement.innerText = userCountry ?? "London";
+        flagElement.src = countriesFlags[userCountry]?.mini ?? "";		// for small sized flag
       });
   });
