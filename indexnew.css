@@ -533,6 +533,8 @@ body {
     bottom: 20px;
     left: 15px;
     width: calc(100% - 50px);
+    display: flex;
+    align-items: center;
 }
 
 .chat-box {
@@ -550,7 +552,6 @@ body {
 
 .chat-icons {
     position: absolute;
-    bottom: 10px;
     left: 92% !important;
     color: #7b838d;
     font-size: 1.5rem;
