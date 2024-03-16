@@ -8,7 +8,6 @@ fetch("./flags.json")
         fetch("https://ipapi.co/json/")
             .then((res) => res.json())
             .then((data) => {
-        debugger;
                 userCountry = data.country_name;
                 const flagElement = document.getElementById("user-flag");
                 const countrynameElement = document.getElementById("user-country");

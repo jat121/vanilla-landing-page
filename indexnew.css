@@ -495,3 +495,36 @@ body {
         transform: rotate(0);
     }
 }
+
+
+.chat-footer {
+    position: fixed;
+    height: 70px;
+    bottom: 0;
+    width: 100%;
+    background-color: #efefef;
+}
+
+.chat-box {
+    position: absolute;
+    height: 70px;
+    border: none;
+    padding: 3px 10px;
+    border-radius: 30px;
+    background-color: #efefef;
+    width: 100%;
+    font-size: 2rem;
+}
+
+.chat-box::placeholder {
+    font-style: italic;
+}
+
+.chat-icons {
+    position: absolute;
+    bottom: 10px;
+    left: 85% !important;
+    color: #7b838d;
+    font-size: 2.5rem;
+    transition: all 0.3s ease 0s;
+}
