@@ -152,6 +152,7 @@ body {
     display: flex;
     justify-content: space-around;
     width: 100%;
+    border-bottom: .5px solid #7b838d;
 }
 
 .user-info {
