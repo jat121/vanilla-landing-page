@@ -107,7 +107,7 @@ body {
 
 .notification {
     display: flex;
-    margin: auto 50px;
+    margin: auto 40px;
     flex-direction: row;
     align-items: center;
 }
