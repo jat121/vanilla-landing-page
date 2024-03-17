@@ -150,6 +150,40 @@
         </div>
 
         <div class="content">
+            <div class="modal" id="modal">
+                <div class="w-80 p-6 bg-white rounded-xl shadow border border-zinc-900 border-opacity-10 flex-col justify-start items-center gap-6 inline-flex">
+                    <div class="self-stretch h-28 flex-col justify-start items-start gap-2 flex">
+                        <div class="self-stretch justify-between items-start inline-flex">
+                            <div class="w-11 h-11 relative bg-sky-50 rounded-full shadow border border-sky-50 flex items-center justify-center">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.6 12C21.6 17.3019 17.302 21.6 12 21.6C6.69809 21.6 2.40002 17.3019 2.40002 12C2.40002 6.69807 6.69809 2.4 12 2.4C17.302 2.4 21.6 6.69807 21.6 12ZM12 8.4C11.5574 8.4 11.1691 8.63906 10.9598 9.00087C10.628 9.57455 9.89392 9.77058 9.32025 9.43873C8.74657 9.10688 8.55054 8.3728 8.88239 7.79913C9.50304 6.72622 10.666 6 12 6C13.9883 6 15.6 7.61178 15.6 9.6C15.6 11.1675 14.5983 12.501 13.2 12.9952V13.2C13.2 13.8627 12.6628 14.4 12 14.4C11.3373 14.4 10.8 13.8627 10.8 13.2V12C10.8 11.3373 11.3373 10.8 12 10.8C12.6628 10.8 13.2 10.2627 13.2 9.6C13.2 8.93726 12.6628 8.4 12 8.4ZM12 18C12.6628 18 13.2 17.4627 13.2 16.8C13.2 16.1373 12.6628 15.6 12 15.6C11.3373 15.6 10.8 16.1373 10.8 16.8C10.8 17.4627 11.3373 18 12 18Z" fill="#2463EB" />
+                                </svg>
+                
+                            </div>
+                            <div id="cross" class="w-7 h-7 relative bg-white rounded-full">
+                                <button class="w-6 h-6 left-[2px] top-[2px] absolute hover:opacity-50">
+                                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.15152 7.15147C7.62015 6.68285 8.37995 6.68285 8.84858 7.15147L14 12.3029L19.1515 7.15147C19.6202 6.68285 20.3799 6.68285 20.8486 7.15147C21.3172 7.6201 21.3172 8.3799 20.8486 8.84853L15.6971 14L20.8486 19.1515C21.3172 19.6201 21.3172 20.3799 20.8486 20.8485C20.3799 21.3172 19.6202 21.3172 19.1515 20.8485L14 15.6971L8.84858 20.8485C8.37995 21.3172 7.62015 21.3172 7.15152 20.8485C6.68289 20.3799 6.68289 19.6201 7.15152 19.1515L12.303 14L7.15152 8.84853C6.68289 8.3799 6.68289 7.6201 7.15152 7.15147Z" fill="#1A1A1A" fill-opacity="0.3" />
+                                        </svg>
+                                    
+                                </button>
+                            </div>
+                        </div>
+                        <div class="self-stretch h-14 flex-col justify-start items-start gap-2 flex">
+                            <div class="self-stretch text-zinc-900 text-lg font-semibold font-['Inter'] leading-loose">Complete this action?</div>
+                            <div class="self-stretch text-zinc-900 text-sm font-normal font-['Inter'] leading-tight">You can’t undo this action later.</div>
+                        </div>
+                    </div>
+                    <div class="self-stretch flex-col justify-start items-start gap-4 flex">
+                        <button class="bg-blue-600 border-blue-600 border border-solid w-full rounded-lg py-1.5 justify-center items-center gap-3 inline-flex confirm-button">
+                            <div class="text-center text-white text-base font-semibold font-['Inter'] leading-normal">Confirm</div>
+                        </button>
+                        <button id="close-modal" class="py-1.5 w-full justify-center items-center gap-3 inline-flex bg-[#FDFDFD] border-solid border rounded-lg">
+                            <div class="text-center text-zinc-900 text-base font-semibold font-['Inter'] leading-normal">Cancel</div>
+                        </button>
+                    </div>
+                </div>
+              </div>
             <div class="content-body">
                 <span class="font-bold" style="margin-top: 16px; font-size: 1rem;">
                     Invited by
@@ -227,40 +261,7 @@
                 <div class="chat-area">
                     
     <!-- modal -->
-  <div class="modal" id="modal">
-    <div class="w-80 p-6 bg-white rounded-xl shadow border border-zinc-900 border-opacity-10 flex-col justify-start items-center gap-6 inline-flex">
-        <div class="self-stretch h-28 flex-col justify-start items-start gap-2 flex">
-            <div class="self-stretch justify-between items-start inline-flex">
-                <div class="w-11 h-11 relative bg-sky-50 rounded-full shadow border border-sky-50 flex items-center justify-center">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M21.6 12C21.6 17.3019 17.302 21.6 12 21.6C6.69809 21.6 2.40002 17.3019 2.40002 12C2.40002 6.69807 6.69809 2.4 12 2.4C17.302 2.4 21.6 6.69807 21.6 12ZM12 8.4C11.5574 8.4 11.1691 8.63906 10.9598 9.00087C10.628 9.57455 9.89392 9.77058 9.32025 9.43873C8.74657 9.10688 8.55054 8.3728 8.88239 7.79913C9.50304 6.72622 10.666 6 12 6C13.9883 6 15.6 7.61178 15.6 9.6C15.6 11.1675 14.5983 12.501 13.2 12.9952V13.2C13.2 13.8627 12.6628 14.4 12 14.4C11.3373 14.4 10.8 13.8627 10.8 13.2V12C10.8 11.3373 11.3373 10.8 12 10.8C12.6628 10.8 13.2 10.2627 13.2 9.6C13.2 8.93726 12.6628 8.4 12 8.4ZM12 18C12.6628 18 13.2 17.4627 13.2 16.8C13.2 16.1373 12.6628 15.6 12 15.6C11.3373 15.6 10.8 16.1373 10.8 16.8C10.8 17.4627 11.3373 18 12 18Z" fill="#2463EB" />
-                    </svg>
-    
-                </div>
-                <div id="cross" class="w-7 h-7 relative bg-white rounded-full">
-                    <button class="w-6 h-6 left-[2px] top-[2px] absolute hover:opacity-50">
-                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.15152 7.15147C7.62015 6.68285 8.37995 6.68285 8.84858 7.15147L14 12.3029L19.1515 7.15147C19.6202 6.68285 20.3799 6.68285 20.8486 7.15147C21.3172 7.6201 21.3172 8.3799 20.8486 8.84853L15.6971 14L20.8486 19.1515C21.3172 19.6201 21.3172 20.3799 20.8486 20.8485C20.3799 21.3172 19.6202 21.3172 19.1515 20.8485L14 15.6971L8.84858 20.8485C8.37995 21.3172 7.62015 21.3172 7.15152 20.8485C6.68289 20.3799 6.68289 19.6201 7.15152 19.1515L12.303 14L7.15152 8.84853C6.68289 8.3799 6.68289 7.6201 7.15152 7.15147Z" fill="#1A1A1A" fill-opacity="0.3" />
-                            </svg>
-                        
-                    </button>
-                </div>
-            </div>
-            <div class="self-stretch h-14 flex-col justify-start items-start gap-2 flex">
-                <div class="self-stretch text-zinc-900 text-lg font-semibold font-['Inter'] leading-loose">Complete this action?</div>
-                <div class="self-stretch text-zinc-900 text-sm font-normal font-['Inter'] leading-tight">You can’t undo this action later.</div>
-            </div>
-        </div>
-        <div class="self-stretch flex-col justify-start items-start gap-4 flex">
-            <button class="bg-blue-600 border-blue-600 border border-solid w-full rounded-lg py-1.5 justify-center items-center gap-3 inline-flex confirm-button">
-                <div class="text-center text-white text-base font-semibold font-['Inter'] leading-normal">Confirm</div>
-            </button>
-            <button id="close-modal" class="py-1.5 w-full justify-center items-center gap-3 inline-flex bg-[#FDFDFD] border-solid border rounded-lg">
-                <div class="text-center text-zinc-900 text-base font-semibold font-['Inter'] leading-normal">Cancel</div>
-            </button>
-        </div>
-    </div>
-  </div>
+
     
 
     <!-- modal end -->

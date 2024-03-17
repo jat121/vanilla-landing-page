@@ -689,8 +689,10 @@ img {
     display: none;
     position: absolute;
     z-index: 2 !important;
-    left: 20%;
-    top: 40%;
+    top: 35%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .confirm-button {

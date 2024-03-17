@@ -57,7 +57,7 @@ const modalclose = document.getElementById("close-modal");
 const modalcloseCross = document.getElementById("cross");
 
 openPopup.onclick = (event) => {
-    modal.style.display = "block";
+    modal.style.display = "flex";
 }
 
 modalclose.onclick = () => {
