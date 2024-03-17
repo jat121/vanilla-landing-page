@@ -537,7 +537,7 @@ img {
     height: calc(100% - 90%); 
     bottom: 15px;
     left: 15px;
-    width: calc(100% - 50px);
+    width: calc(100% - 35px);
     display: flex;
     align-items: center;
 }
@@ -557,7 +557,7 @@ img {
 
 .chat-icons {
     position: absolute;
-    left: 92% !important;
+    left: 90% !important;
     color: #7b838d;
     font-size: 1.5rem;
     transition: all 0.3s ease 0s;
