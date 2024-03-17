@@ -17,6 +17,11 @@ body {
     width: 100%;
 }
 
+img {
+    display: inline !important;
+    vertical-align: unset !important;
+}
+
 .header {
     display: flex;
     width: 100%;
@@ -99,11 +104,11 @@ body {
 }
 
 .logo-box {
-    width: 50px;
-    display: block;
-    height: 50px;
-    text-align: center;
-    line-height: 70px;
+    width: 50px !important;
+    display: block !important;
+    height: 50px !important;
+    text-align: center !important;
+    line-height: 70px !important;
 }
 
 .notification {
@@ -539,7 +544,7 @@ body {
 
 .chat-box {
     position: absolute;
-    height: 70px;
+    height: 50px;
     border: none;
     padding: 3px 10px;
     border-radius: 15px;
@@ -679,3 +684,32 @@ body {
     animation: ring 4s .7s ease-in-out infinite;
     transform-origin: 50% 4px;
 }
+
+.modal {
+    display: none;
+    position: absolute;
+    z-index: 2 !important;
+    left: 20%;
+    top: 40%;
+}
+
+.confirm-button {
+    background-color: #EA4C89 !important;
+    border: none !important;
+}
+
+.status-circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #75c100;
+    border: 2px solid #75c100;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+  }
+
+  .icon-container {
+    position: relative;
+  }
+  

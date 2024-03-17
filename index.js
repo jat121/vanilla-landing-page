@@ -50,3 +50,23 @@ fetch(
         profileElement.src = "https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*";
         profiledesktopElement.src = "https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*"
     });
+
+const openPopup = document.getElementById("open-popup");
+const modal = document.getElementById("modal");
+const modalclose = document.getElementById("close-modal");
+const modalcloseCross = document.getElementById("cross");
+
+openPopup.onclick = (event) => {
+    modal.style.display = "block";
+}
+
+modalclose.onclick = () => {
+    modal.style.display = "none";
+    
+}
+
+modalcloseCross.onclick = () => {
+    modal.style.display = "none"
+}
+
+
