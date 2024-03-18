@@ -139,7 +139,7 @@ function appendMessage(name, img, side, text) {
         appendTyping(profile_pic, "left");
         setTimeout(() => {
             appendMessage(name, profile_pic, "left", msgText)
-          }, 8000);
+          }, 4555);
     });
   }
 
