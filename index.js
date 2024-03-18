@@ -1,5 +1,6 @@
 let countriesFlags = {};
 let userCountry = "";
+let userCountryCode = "";
 var _name = "";
 var _username = "";
 var _profile_pic = "";
@@ -12,14 +13,15 @@ fetch("./flags.json")
             .then((res) => res.json())
             .then((data) => {
                 userCountry = data.country_name;
+                userCountryCode = data.country_code;
                 const flagElement = document.getElementById("user-flag");
                 const flagMobileElement = document.getElementById("user-flag-mobile");
                 const countrynameElement = document.getElementById("user-country");
                 const countrynameMobileElement = document.getElementById(
                     "user-country-mobile"
                 );
-                countrynameElement.innerText = userCountry ?? "London";
-                countrynameMobileElement.innerText = userCountry ?? "London";
+                countrynameElement.innerText = userCountryCode ?? "London";
+                countrynameMobileElement.innerText = userCountryCode ?? "London";
                 flagElement.src = countriesFlags[userCountry]?.mini ?? ""; // for small sized flag
                 flagMobileElement.src = countriesFlags[userCountry]?.mini ?? ""; // for small sized flag
             });

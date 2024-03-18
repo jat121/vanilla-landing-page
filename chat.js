@@ -1,5 +1,6 @@
 const msgerInput = get("#msger-input");
 const msgerChat = get(".chat-area-mobile");
+const msgerdeskChat = get(".chat-area-desktop");
 const sendMsg = get('.send-message');
 
 
@@ -30,7 +31,9 @@ const BOT_MSGS = [
 function appendMessage(name, img, side, text) {
     //   Simple solution for small apps
     const typeElement = get("#type-on");
+    const typedeskElement = get("#type-on-desk");
     typeElement.remove();
+    typedeskElement.remove();
     const msgHTML = `
       <div class="msg ${side}-msg">
         <div class="msg-img" style="background-image: url(${img})"></div>
@@ -45,8 +48,24 @@ function appendMessage(name, img, side, text) {
         </div>
       </div>
     `;
+
+    const deskmsgHTML = `
+      <div class="msg-desk ${side}-msg-desk">
+        <div class="msg-img-desk" style="background-image: url(${img})"></div>
+  
+        <div class="msg-bubble-desk">
+          <div class="msg-info-desk">
+            <div class="msg-info-name-desk">${name}</div>
+            <div class="msg-info-time-desk">${formatDate(new Date())}</div>
+          </div>
+  
+          <div class="msg-text-desk">${text}</div>
+        </div>
+      </div>
+    `;
   
     msgerChat.insertAdjacentHTML("beforeend", msgHTML);
+    msgerdeskChat.insertAdjacentHTML("beforeend", deskmsgHTML);
     msgerChat.scrollTop += 500;
   }
   
@@ -89,8 +108,21 @@ function appendMessage(name, img, side, text) {
         </div>
       </div>
     `;
+
+    const msgdeskHTML = `
+    <div id="type-on-desk" style="align-items: center" class="msg-desk ${side}-msg-desk">
+      <div class="msg-img-desk" style="background-image: url(${img})"></div>
+        <div class="typing-desk">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  `;
   
     msgerChat.insertAdjacentHTML("beforeend", msgHTML);
+    msgerdeskChat.insertAdjacentHTML("beforeend", msgdeskHTML);
     msgerChat.scrollTop += 500;
   }
 

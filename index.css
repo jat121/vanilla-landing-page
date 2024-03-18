@@ -1,4 +1,4 @@
-.container {
+.desk-container {
     display: flex;
     min-height: 100%;
     background-color: #BBE2EC;
@@ -73,7 +73,7 @@
     background: #138ac9;
     width: 5px;
     height: 70px;
-    left: 290px;
+    left: 270px;
     top: 150px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -95,7 +95,7 @@
     background: #EA4C89;
     margin: 13px;
     border-radius: 30px;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .phone-container-outer:after {
