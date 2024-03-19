@@ -37,7 +37,7 @@ function appendMessage(name, img, side, text) {
     const msgHTML = `
       <div class="msg ${side}-msg">
         <div class="msg-img" style="background-image: url(${img})"></div>
-        <div>
+        <div class="bubble-wrapper">
         <div class="msg-bubble">
         <div class="msg-text">${text}</div>
 
