@@ -607,7 +607,7 @@ img {
 
 .msg {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     margin-bottom: 10px;
 }
 
@@ -618,7 +618,7 @@ img {
 }
 
 .left-msg .msg-bubble {
-    border-bottom-left-radius: 0;
+    /* border-bottom-left-radius: 0; */
     color: #fff;
 }
 
