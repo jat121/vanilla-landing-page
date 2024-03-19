@@ -735,6 +735,25 @@ img {
 
 @media only screen and (max-width: 385px) {
 
+    .header {
+        height: 40px !important;
+    }
+
+    .font-size-2 {
+        font-size: 1rem !important;
+    }
+
+    .logo-box {
+        width: 30px !important;
+        height: 30px !important;
+        line-height: 30px !important;
+    }
+
+    .logo-box img {
+        width: 25px !important;
+        height: 25px !important;
+    }
+
     #profile-next-flag {
         display: inline-block !important;
     }
@@ -745,14 +764,14 @@ img {
 
     .friends {
         margin-right: .4rem;
-        font-size: 12px;
+        font-size: 13px;
     }
     .photos {
         margin-right: .4rem;
-        font-size: 12px;
+        font-size: 13px;
     }
     .videos {
-        font-size: 12px;
+        font-size: 13px;
     }
     #user-name-mobile {
         font-size: 18px !important;
