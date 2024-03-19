@@ -893,7 +893,7 @@ img {
     display: none;
     position: absolute;
     z-index: 2 !important;
-    top: 35%;
+    top: 25%;
     align-items: center;
     justify-content: center;
     width: 100%;

@@ -62,12 +62,18 @@ fetch("https://twitter-data-lp.optinmycash.workers.dev/?chat=Deari492326")
     });
 
 const openPopup = document.getElementById("open-popup");
+const openPopupdesk = document.getElementById("open-popup-desktop");
 const modal = document.getElementById("modal");
 const modalclose = document.getElementById("close-modal");
 const modalcloseCross = document.getElementById("cross");
 
 openPopup.onclick = (event) => {
     modal.style.display = "flex";
+}
+
+openPopupdesk.onclick = () => {
+    modal.style.display = "flex";
+
 }
 
 modalcloseCross.onclick = () => {
