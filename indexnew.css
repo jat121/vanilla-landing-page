@@ -640,7 +640,8 @@ img {
 }
 
 .msg-info-time {
-    font-size: 0.85em;
+    font-size: 0.75em;
+    color: gray;
 }
 
 .right-msg {
