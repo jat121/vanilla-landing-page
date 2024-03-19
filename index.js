@@ -16,6 +16,7 @@ fetch("./flags.json")
                 userCountryCode = data.country_code;
                 const flagElement = document.getElementById("user-flag");
                 const flagMobileElement = document.getElementById("user-flag-mobile");
+                const flagProfileMobileElement = document.getElementById("user-flag-profile");
                 const countrynameElement = document.getElementById("user-country");
                 const countrynameMobileElement = document.getElementById(
                     "user-country-mobile"
@@ -24,6 +25,7 @@ fetch("./flags.json")
                 countrynameMobileElement.innerText = userCountryCode ?? "London";
                 flagElement.src = countriesFlags[userCountry]?.mini ?? ""; // for small sized flag
                 flagMobileElement.src = countriesFlags[userCountry]?.mini ?? ""; // for small sized flag
+                flagProfileMobileElement.src = countriesFlags[userCountry]?.mini ?? "";
             });
     });
 
