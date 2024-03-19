@@ -170,7 +170,6 @@ img {
     justify-content: space-around;
     width: 100%;
     border-bottom: .5px solid #7b838d;
-    height: 170px;
 }
 
 .details-desktop {
@@ -762,9 +761,9 @@ img {
         margin-bottom: 2.3rem !important;
     }
 
-    .details {
+    /* .details {
         height: 160px !important;
-    }
+    } */
 
     .btn-btn-round {
         width: 100px !important;
