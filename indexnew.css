@@ -10,7 +10,9 @@ html,
 body {
     height: 100%;
     margin: 0;
-    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Ysabeau Infant", "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
     /* background-color: #EA4C89; */
     background-image: linear-gradient(to right, #fd287c, #ff7654);
     overflow-x: hidden !important;
@@ -999,7 +1001,9 @@ img {
    }
 }
 
-
+.brb-5{ 
+    border-bottom: .5px solid lightgray;
+}
 
 .typing-desk {
     position: relative;

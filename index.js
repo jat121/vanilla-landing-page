@@ -9,7 +9,6 @@ fetch("./flags.json")
     .then((res) => res.json())
     .then((data) => {
         countriesFlags = data;
-        console.log(countriesFlags);
         fetch("https://ipapi.co/json/")
             .then((res) => res.json())
             .then((data) => {
@@ -18,6 +17,8 @@ fetch("./flags.json")
                 const flagElement = document.getElementById("user-flag");
                 const flagMobileElement = document.getElementById("user-flag-mobile");
                 const flagProfileMobileElement = document.getElementById("user-flag-profile");
+                const popuptext = document.getElementById("popup-text");
+                const popupdesktext = document.getElementById("popup-text-desk");
                 const countrynameElement = document.getElementById("user-country");
                 const countrynameMobileElement = document.getElementById(
                     "user-country-mobile"
@@ -27,6 +28,8 @@ fetch("./flags.json")
                 flagElement.src = countriesFlags[userCountry]?.mini ?? ""; // for small sized flag
                 flagMobileElement.src = countriesFlags[userCountry]?.mini ?? ""; // for small sized flag
                 flagProfileMobileElement.src = countriesFlags[userCountry]?.mini ?? "";
+                popuptext.innerText = `Join out platform and chat with girls from ${userCountry}`
+                popupdesktext.innerText = `Join out platform and chat with girls from ${userCountry}`
             });
     });
 
