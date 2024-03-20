@@ -230,7 +230,7 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    width: 50%;
+    width: 53%;
 }
 
 .profile-box {
@@ -552,7 +552,7 @@ img {
 
 .chat-footer {
     position: sticky;
-    height: calc(100% - 90%);
+    height: 10%;
     width: 100%;
     display: flex;
     background-color: #fff;
@@ -564,9 +564,9 @@ img {
     position: absolute;
     height: 50px;
     border: none;
-    padding: 3px 10px;
-    bottom: 0;
+    bottom: 7px;
     border-radius: 15px;
+    left: 0.5rem;
     box-shadow: rgba(17, 17, 26, 0.16) 0px 4px 16px 0px inset, rgba(17, 17, 26, 0.05) 0px 8px 32px 0px;
     box-shadow: rgba(17, 17, 26, .5) 0px 0px 10px 1px inset, rgba(17, 17, 26, 0.05) 0px 8px 32px 0px;
     box-shadow: rgba(17, 17, 26, 0.65) 1px 1px 10px -4px inset;
@@ -578,7 +578,7 @@ img {
     position: absolute;
     left: 90% !important;
     color: #7b838d;
-    bottom: 8%;
+    bottom: 26%;
     font-size: 1.5rem;
     transition: all 0.3s ease 0s;
 }
@@ -595,7 +595,7 @@ img {
 }
 
 .chat-area-desktop {
-    height: 100%;
+    height: 32%;
     flex: 1;
     border: 0.5px solid #fff;
     overflow-y: auto !important;
@@ -670,7 +670,7 @@ img {
 
 .msg-desk {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     margin-bottom: 10px;
 }
 
@@ -683,7 +683,6 @@ img {
 }
 
 .left-msg-desk .msg-bubble-desk {
-    border-bottom-left-radius: 0;
     color: #fff;
 }
 
@@ -847,7 +846,7 @@ img {
     display: flex;
     width: 100%;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .profile-box-desktop {
@@ -883,8 +882,8 @@ img {
 }
 
 .btn-btn-round-desktop {
-    width: 80px;
-    height: 40px;
+    width: 7rem;
+    height: 2rem;
     font-size: 8px;
     text-transform: uppercase;
     letter-spacing: 2.5px;
