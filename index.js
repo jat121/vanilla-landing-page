@@ -42,6 +42,7 @@ fetch("https://twitter-data-lp.optinmycash.workers.dev/?chat=Deari492326")
         const usernameElement = document.getElementById("user-name-mobile");
         const usernamedesktopElement = document.getElementById("user-name-desktop");
         const singupElement = document.getElementById("signup-user");
+        const singupDeskElement = document.getElementById("signup-user-desk");
 
         const useridElement = document.getElementById("user-id-mobile");
         const useriddesktopElement = document.getElementById("user-id-desktop");
@@ -65,21 +66,36 @@ fetch("https://twitter-data-lp.optinmycash.workers.dev/?chat=Deari492326")
         singupElement.onclick = () => {
             location.href = _url;
         }
+
+        singupDeskElement.onclick = () => {
+            location.href = _url;
+        }
     });
 
 const openPopup = document.getElementById("open-popup");
-const openPopupdesk = document.getElementById("open-popup-desktop");
+const openPopupdesk = document.getElementById("open-popup-desk");
 const modal = document.getElementById("modal");
+const modalDesk = document.getElementById("modal-desk");
 const modalclose = document.getElementById("close-modal");
 const modalcloseCross = document.getElementById("cross");
+const modalcloseCrossDesk = document.getElementById("cross-desk");
+const startNow = document.getElementById("start-now");
 
 openPopup.onclick = (event) => {
     modal.style.display = "flex";
 }
 
 openPopupdesk.onclick = () => {
-    modal.style.display = "flex";
+    modalDesk.style.display = "flex";
 
+}
+
+startNow.onclick = () => {
+    modalDesk.style.display = "flex";
+}
+
+modalcloseCrossDesk.onclick = () => {
+    modalDesk.style.display = "none"
 }
 
 modalcloseCross.onclick = () => {

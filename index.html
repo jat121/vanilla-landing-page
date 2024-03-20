@@ -19,6 +19,40 @@
   
 
     <div class="desk-container desktop">
+        <div class="modal" id="modal-desk">
+            <div class="w-80 p-6 bg-white rounded-xl shadow border border-zinc-900 border-opacity-10 flex-col justify-start items-center gap-6 inline-flex">
+                <div class="self-stretch flex-col justify-start items-start gap-2 flex">
+                    <div class="self-stretch justify-end items-start inline-flex">
+                        
+                        <div id="cross-desk" class="w-7 h-7 relative bg-white rounded-full">
+                            <button class="w-6 h-6 left-[2px] top-[2px] absolute hover:opacity-50">
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.15152 7.15147C7.62015 6.68285 8.37995 6.68285 8.84858 7.15147L14 12.3029L19.1515 7.15147C19.6202 6.68285 20.3799 6.68285 20.8486 7.15147C21.3172 7.6201 21.3172 8.3799 20.8486 8.84853L15.6971 14L20.8486 19.1515C21.3172 19.6201 21.3172 20.3799 20.8486 20.8485C20.3799 21.3172 19.6202 21.3172 19.1515 20.8485L14 15.6971L8.84858 20.8485C8.37995 21.3172 7.62015 21.3172 7.15152 20.8485C6.68289 20.3799 6.68289 19.6201 7.15152 19.1515L12.303 14L7.15152 8.84853C6.68289 8.3799 6.68289 7.6201 7.15152 7.15147Z" fill="#1A1A1A" fill-opacity="0.3" />
+                                    </svg>
+                                
+                            </button>
+                        </div>
+                    </div>
+                    <div class="self-stretch flex-col text-center justify-start items-start flex">
+                        <div class="self-stretch text-zinc-900 text-sm font-bold font-['Inter'] leading-loose">Register for FREE and unlock access</div>
+                    </div>
+                </div>
+                <div id="signup-user-desk" class="self-stretch flex-col text-center justify-start items-start gap-4 flex">
+                    <button class="bg-blue-600 border-blue-600 border border-solid w-full rounded-lg py-1.5 justify-center items-center gap-3 inline-flex confirm-button">
+                        <div class="text-center text-white text-base font-semibold font-['Inter'] leading-normal">Sign up</div>
+                    </button>
+                    
+                </div>
+                <div class="self-stretch flex-col text-center justify-center items-start flex">
+                    <div class="self-stretch font-bold text-base text-red-600 font-semibold font-['Inter'] leading-loose">Email confirmation is mandatory*</div>
+                    <p>Join out platform and chat with girls from Tychy and PL</p>
+                    
+                </div>
+                <div class="self-stretch font-bold text-center flex-col justify-start items-center flex">
+                    <p>Only for 18+</p>
+                </div>
+            </div>
+          </div>
         <div class="left-side">
             <div class="phone-graphic">
                 <div class="phone-case">
@@ -38,6 +72,7 @@
                             </div>
                     
                             <div class="content-desktop">
+                                
                                 <div class="content-body">
                                     <span class="font-bold" style="margin-top: 8px; font-size: .8rem;">
                                         Invited by
@@ -69,7 +104,7 @@
                                                 </div>
                                                 <div class="friends" style="margin-right: .3rem;">
                                                     <span class="font-bold flag-box br-4 logo-shadow">
-                                                        <img id="user-flag" src="#" alt="logo" />
+                                                        <img style="height: 22px; width: 22px;" height="22px" width="22px" id="user-flag" src="#" alt="logo" />
                                                     </span>
                                                     <span id="user-country" class="">London</span>
                                                 </div>
@@ -104,8 +139,8 @@
                                 
                             </div>
                             <div class="chat-footer">
-                                <input id="msger-input" style="font-size: .8rem; height: 2rem; width: 17rem;" class="chat-box" placeholder="Type your message">
-                                <div id="open-popup" style="left: 84% !important; font-size: 1.2rem;" class="chat-icons send-message">
+                                <input id="msger-input" style="font-size: .8rem; height: 2rem; width: 16rem; padding: 10px;" class="chat-box" placeholder="Type your message">
+                                <div id="open-popup-desk" style="left: 84% !important; font-size: 1.2rem;" class="chat-icons send-message">
                                     <span>
                                         <i class="fa-solid fa-paper-plane" style="color: #EA4C89;"></i>
                                     </span>
@@ -117,7 +152,7 @@
             </div>
         </div>
         <div class="right-side">
-            <h1 class="text-head">LIVE CHAT</h1>
+            <h1 class="text-head font-size-2">LIVE CHAT</h1>
             <p class="text-para">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                 do eiusmod tempor
@@ -125,7 +160,7 @@
                 viverra vitae congue eu. Varius duis at
                 consectetur lorem donec massa.
             </p>
-            <div class="round-btn-wrap">
+            <div id="start-now" class="round-btn-wrap">
                 <button class="button-btn-round">Start Now</button>
 
             </div>

@@ -8,7 +8,7 @@ const sendMsg = get('.send-message');
 const BOT_MSGS = [
   "Hi, how are you?",
   "Let's talk!",
-  "I like to play games... But I don't know how to play!",
+  "I like to play games, But I don't know how to play!",
   "You are amazing. :))",
   "I feel sleepy! :("
 ];
@@ -55,14 +55,14 @@ function appendMessage(name, img, side, text) {
     const deskmsgHTML = `
       <div class="msg-desk ${side}-msg-desk">
         <div class="msg-img-desk" style="background-image: url(${img})"></div>
+        <div class="bubble-wrapper">
   
         <div class="msg-bubble-desk">
-          <div class="msg-info-desk">
-            <div class="msg-info-name-desk">${name}</div>
-            <div class="msg-info-time-desk">${formatAMPM(new Date())}</div>
+        <div class="msg-text-desk">${text}</div>
+
           </div>
+          <div class="msg-info-time-desk">${formatAMPM(new Date())}</div>
   
-          <div class="msg-text-desk">${text}</div>
         </div>
       </div>
     `;
