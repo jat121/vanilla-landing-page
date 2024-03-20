@@ -743,6 +743,11 @@ img {
         font-size: 1rem !important;
     }
 
+    .profile-box {
+        width: 60px;
+        height: 60px;
+    }
+
     .logo-box {
         width: 30px !important;
         height: 30px !important;
@@ -789,9 +794,9 @@ img {
         margin-bottom: 2.3rem !important;
     }
 
-    /* .details {
-        height: 160px !important;
-    } */
+    .details {
+        padding: 0.5rem;
+    }
 
     .btn-btn-round {
         width: 100px !important;
