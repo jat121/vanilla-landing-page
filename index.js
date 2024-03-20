@@ -3,6 +3,7 @@ let userCountry = "";
 let userCountryCode = "";
 var _name = "";
 var _username = "";
+var _url = ""
 var _profile_pic = "";
 fetch("./flags.json")
     .then((res) => res.json())
@@ -33,13 +34,14 @@ fetch("./flags.json")
 fetch("https://twitter-data-lp.optinmycash.workers.dev/?chat=Deari492326")
     .then((res) => res.json())
     .then((data) => {
-        const { username, name, profile_pic } = data; 
+        const { username, name, profile_pic, url } = data; 
         _name = name;
         _username = username;
         _profile_pic = profile_pic;
-
+        _url = url;
         const usernameElement = document.getElementById("user-name-mobile");
         const usernamedesktopElement = document.getElementById("user-name-desktop");
+        const singupElement = document.getElementById("signup-user");
 
         const useridElement = document.getElementById("user-id-mobile");
         const useriddesktopElement = document.getElementById("user-id-desktop");
@@ -59,15 +61,25 @@ fetch("https://twitter-data-lp.optinmycash.workers.dev/?chat=Deari492326")
 
         profileElement.src = profile_pic;
         profiledesktopElement.src = profile_pic;
+
+        singupElement.onclick = () => {
+            location.href = _url;
+        }
     });
 
 const openPopup = document.getElementById("open-popup");
+const openPopupdesk = document.getElementById("open-popup-desktop");
 const modal = document.getElementById("modal");
 const modalclose = document.getElementById("close-modal");
 const modalcloseCross = document.getElementById("cross");
 
 openPopup.onclick = (event) => {
     modal.style.display = "flex";
+}
+
+openPopupdesk.onclick = () => {
+    modal.style.display = "flex";
+
 }
 
 modalcloseCross.onclick = () => {
