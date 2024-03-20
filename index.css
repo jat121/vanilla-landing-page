@@ -5,10 +5,6 @@
     justify-content: space-around;
 }
 
-.desktop {
-    display: flex;
-}
-
 .right-side {
     display: flex;
     flex-direction: column;
@@ -22,7 +18,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 45%;
+    margin-right: 2rem;
 }
 
 .inner-box {
@@ -42,16 +38,17 @@
 .phone-graphic {
     position: relative;
     width: 330px;
-    margin-top: 30px;
-    margin-left: 100px;
+    margin-top: 4rem;
+    margin-left: 10rem;
 }
 
 .phone-case {
     box-shadow: inset 3px 3px 8px #82dcff, inset 0 0 3px #082049, inset -3px -3px 8px 0px #002094, 10px 10px 15px #b8b8b8;
     border-radius: 50px;
     background: #138ac9;
-    width: 270px;
+    width: 20rem;
     padding: 10px;
+    height: 35rem;
 }
 
 .phone-case:before {
@@ -73,7 +70,7 @@
     background: #138ac9;
     width: 5px;
     height: 70px;
-    left: 270px;
+    left: 340px;
     top: 150px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -88,6 +85,7 @@
     border-radius: 40px;
     box-shadow: inset 1px 1px 10px #ddd, inset 1px 1px 3px #8f8f8f, 0 0 6px #1059a5;
     background-color: #000;
+    height: 34.5rem;
 }
 
 .phone-container-inner {
@@ -96,6 +94,8 @@
     margin: 13px;
     border-radius: 30px;
     overflow: auto;
+    height: 33rem;
+    overflow-x: hidden;
 }
 
 .phone-container-outer:after {
