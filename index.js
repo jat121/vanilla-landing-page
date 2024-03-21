@@ -83,6 +83,8 @@ const modalclose = document.getElementById("close-modal");
 const modalcloseCross = document.getElementById("cross");
 const modalcloseCrossDesk = document.getElementById("cross-desk");
 const startNow = document.getElementById("start-now");
+const joinChat = document.getElementById("join-chat");
+const joinChatDesk = document.getElementById("join-chat-desk");
 
 openPopup.onclick = (event) => {
     modal.style.display = "flex";
@@ -94,6 +96,14 @@ openPopupdesk.onclick = () => {
 }
 
 startNow.onclick = () => {
+    modalDesk.style.display = "flex";
+}
+
+joinChat.onclick = () => {
+    modal.style.display = "flex";
+}
+
+joinChatDesk.onclick = () => {
     modalDesk.style.display = "flex";
 }
 

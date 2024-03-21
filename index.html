@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- <link rel="stylesheet" href="https://rsms.me/inter/inter.css">     -->
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="indexnew.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -15,6 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ysabeau+Infant:ital,wght@0,1..1000;1,1..1000&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="./modal.css">
     <title>Document</title>
 </head>
 
@@ -26,7 +25,7 @@
     <div class="desk-container desktop">
         <div class="modal" id="modal-desk">
             <div
-                class="w-80 p-6 bg-white rounded-xl shadow border border-zinc-900 border-opacity-10 flex-col justify-start items-center gap-6 inline-flex">
+                class="br-20 b-none w-80 p-6 bg-white rounded-xl shadow border border-zinc-900 border-opacity-10 flex-col justify-start items-center gap-6">
                 <div class="self-stretch flex-col justify-start items-start gap-2 flex">
                     <div class="self-stretch justify-end items-start inline-flex">
 
@@ -42,22 +41,23 @@
                             </button>
                         </div>
                     </div>
-                    <div class="self-stretch flex-col text-center justify-start items-start flex brb-5">
+                    <div class="self-stretch flex-col text-center justify-start items-start flex  ">
                         <div class="self-stretch text-zinc-900 text-sm font-bold leading-loose">Register
                             for FREE and unlock access</div>
                     </div>
-                </div>
-                <div id="signup-user-desk"
-                    class="self-stretch flex-col text-center justify-start items-start gap-4 flex brb-5">
+                    <div id="signup-user-desk"
+                    class="align-center  self-stretch flex-col text-center justify-start items-start gap-4 flex">
                     <button
-                        class="bg-blue-600 border-blue-600 border border-solid w-full rounded-lg py-1.5 justify-center items-center gap-3 inline-flex confirm-button">
-                        <div class="text-center text-white text-base font-semibold leading-normal">Sign
+                        class="bg-blue-600 border-blue-600 border sign-up-shadow border-solid w-full rounded-lg py-1.5 justify-center items-center gap-3 inline-flex confirm-button">
+                        <div class="text-center text-white text-base font-white font-semibold leading-normal">Sign
                             up</div>
                     </button>
 
                 </div>
-                <div class="self-stretch flex-col text-center justify-center items-start flex brb-5">
-                    <div class="self-stretch font-bold text-base text-red-600 font-semibold leading-loose brb-5">
+                </div>
+                <hr>
+                <div style="padding: 0 2rem;" class="self-stretch flex-col text-center justify-center items-start flex  ">
+                    <div  class="self-stretch font-bold text-base text-red-600 font-semibold leading-loose  ">
                         Email confirmation is mandatory*</div>
                     <p id="popup-text-desk"></p>
 
@@ -140,7 +140,7 @@
 
                                             </div>
 
-                                            <div class="round-btn-wrap">
+                                            <div id="join-chat-desk" class="round-btn-wrap">
                                                 <button class="btn-btn-round-desktop" style="font-size: 11px;">Join
                                                     chat</button>
 
@@ -214,7 +214,7 @@
         <div class="content">
             <div class="modal" id="modal">
                 <div
-                    class="w-80 p-6 bg-white rounded-xl shadow border border-zinc-900 border-opacity-10 flex-col justify-start items-center gap-6 inline-flex">
+                    class="br-20 w-80 p-6 b-none bg-white rounded-xl shadow border border-zinc-900 border-opacity-10 flex-col justify-start items-center gap-6">
                     <div class="self-stretch flex-col justify-start items-start gap-2 flex">
                         <div class="self-stretch justify-end items-start inline-flex">
 
@@ -230,22 +230,23 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="self-stretch flex-col text-center justify-start items-start flex brb-5">
+                        <div class="self-stretch flex-col text-center justify-start items-start flex  ">
                             <div class="self-stretch text-zinc-900 text-sm font-bold  leading-loose">
                                 Register for FREE and unlock access</div>
                         </div>
-                    </div>
-                    <div id="signup-user"
-                        class="self-stretch flex-col text-center justify-start items-start gap-4 flex brb-5">
+                        <div id="signup-user"
+                        class="align-center self-stretch flex-col text-center justify-start items-start gap-4 flex  ">
                         <button
-                            class="bg-blue-600 border-blue-600 border border-solid w-full rounded-lg py-1.5 justify-center items-center gap-3 inline-flex confirm-button">
-                            <div class="text-center text-white text-base font-semibold  leading-normal">
+                            class="bg-blue-600 sign-up-shadow border-blue-600 border border-solid w-full rounded-lg py-1.5 justify-center items-center gap-3 inline-flex confirm-button">
+                            <div class="text-center  text-white text-base font-semibold font-white leading-normal">
                                 Sign up</div>
                         </button>
 
                     </div>
-                    <div class="self-stretch flex-col text-center justify-center items-start flex brb-5">
-                        <div class="self-stretch font-bold text-base text-red-600 font-semibold leading-loose brb-5">
+                    </div>
+                    <hr>
+                    <div style="padding: 0 2rem;" class="self-stretch flex-col text-center justify-center items-start flex  ">
+                        <div class="self-stretch font-bold text-base text-red-600 font-semibold leading-loose  ">
                             Email confirmation is mandatory*</div>
                         <p id="popup-text"> </p>
 
@@ -320,9 +321,8 @@
                                 Please verify your account to enable message sending.
                             </p>
                         </div> -->
-                        <div class="round-btn-wrap">
+                        <div id="join-chat" class="round-btn-wrap">
                             <button class="btn-btn-round">Join chat</button>
-
                         </div>
                     </div>
 

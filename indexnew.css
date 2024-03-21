@@ -600,7 +600,7 @@ img {
 }
 
 .chat-area-desktop {
-    height: 32%;
+    height: 34%;
     flex: 1;
     overflow-y: auto !important;
     width: 100%;
