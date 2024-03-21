@@ -1085,7 +1085,7 @@
     }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1300px) {
     #user-name-desktop {
         font-size: 1.5rem !important;
     }
