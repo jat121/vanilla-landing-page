@@ -59,7 +59,13 @@ fetch("./flags.json")
         const profileElement = document.getElementById("profile_pic_mobile");
         const profiledesktopElement = document.getElementById("profile-pic-desktop");
 
-        const leftImg = document.getElementById("left-img");
+        const not = document.getElementById("notification");
+        const notDesk = document.getElementById("notification-desk");
+
+        not.innerText = `We have notified ${_name} that you've joined the chat.
+        Please verify your account to enable message sending.`
+        notDesk.innerText = `We have notified ${_name} that you've joined the chat.
+        Please verify your account to enable message sending.`
 
         usernameElement.innerText = name;
         usernamedesktopElement.innerText = name;
