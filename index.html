@@ -80,7 +80,7 @@
                                                 width="16px" />
                                         </span>
                                     </div>
-                                    <span class="font-size-1 font-bold font-white">
+                                    <span id="banter" style="margin-left: 16%;" class="font-size-1 font-bold font-white">
                                         BanterBox
                                     </span>
                                 </div>
@@ -89,16 +89,19 @@
                             <div class="content-desktop">
 
                                 <div class="content-body">
-                                    <span class="font-bold" style="margin-top: 8px; font-size: .8rem;">
+                                    <span id="invited" class="font-bold" style="margin-top: 8px; font-size: .8rem;">
                                         Invited by
                                     </span>
                                     <div class="details-desktop">
                                         <div class="left">
-                                            <div class="" style="margin: .5rem;">
+                                            <div class="icon-container" style="margin: .5rem;">
                                                 <span class="my-icons-desktop profile-box-desktop logo-shadow br-4">
                                                     <img id="profile-pic-desktop" src="#" alt="profile-pic" width="100%"
                                                         height="100%" />
                                                 </span>
+                                                <div class='status-circle blinking'>
+                                            </div>
+                                            
                                             </div>
                                             <span>
                                                 <b id="user-name-desktop" style="font-size: 16px;">
@@ -109,7 +112,7 @@
                                                 style="color:#EA4C89;">
                                                 @johndoe123
                                             </span>
-                                            <span style="font-size: .5rem;" class="font-small font-italic">
+                                            <span id="joined" style="font-size: .5rem;" class="font-small font-italic">
                                                 Joined March, 2024
                                             </span>
                                         </div>
@@ -267,7 +270,7 @@
                                 <img id="profile_pic_mobile" src="#" alt="profile-pic" height="100%" width="100%" />
                             </span>
                             <!-- <span class="active"></span> -->
-                            <div class='status-circle'>
+                            <div id="active" class='status-circle blinking'>
                             </div>
                         </div>
                         <span align="center">
@@ -357,6 +360,8 @@
 
 
 </body>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 <script src="index.js"></script>
 <script src="chat.js"></script>
 <script type="text/json" src="flags.json"></script>
