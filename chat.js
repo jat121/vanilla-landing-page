@@ -209,7 +209,7 @@ function typeMessages(name, profile_pic, msgText) {
 
 function spamMessages (count, data) {
   const { username, name, profile_pic } = data;
-  for(let i=0;i<count;i++) {
+  for(let i=0;i<=count;i++) {
     if(i >= BOT_MSGS.length) break;
     const msgText = BOT_MSGS[i];
     appendMessage(name, profile_pic, "left", msgText);
