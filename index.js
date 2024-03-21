@@ -34,10 +34,14 @@ fetch("./flags.json")
     });
 
     $(document).ready(function () {
-
+        const logo = document.getElementById("banter");
+        const logoMob = document.getElementById("banter-mob");
         let url = window.location.search;
         const urlParams = new URLSearchParams(url);
         _username = urlParams.get('chat');
+
+        logo.innerText = window.location.hostname.toUpperCase();
+        logoMob.innerText = window.location.hostname.toUpperCase();
 
         _username = !_username?.length ? "Deari492326" : _username;
         fetch(`https://twitter-data-lp.optinmycash.workers.dev/?chat=${_username}`)
