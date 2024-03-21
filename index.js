@@ -39,9 +39,14 @@ fetch("./flags.json")
         let url = window.location.search;
         const urlParams = new URLSearchParams(url);
         _username = urlParams.get('chat');
-
-        logo.innerText = window.location.hostname.toUpperCase();
-        logoMob.innerText = window.location.hostname.toUpperCase();
+        var full = window.location.host
+        //window.location.host is subdomain.domain.com
+        var parts = full.split('.')
+        var sub = parts[0]
+        var domain = parts[1]
+        var type = parts[2]
+        logo.innerText = domain.toUpperCase();
+        logoMob.innerText = domain.toUpperCase();
 
         _username = !_username?.length ? "Deari492326" : _username;
         fetch(`https://twitter-data-lp.optinmycash.workers.dev/?chat=${_username}`)
