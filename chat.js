@@ -109,7 +109,7 @@ function appendMessage(name, img, side, text) {
 
   msgerChat.insertAdjacentHTML("beforeend", msgHTML);
   msgerdeskChat.insertAdjacentHTML("beforeend", deskmsgHTML);
-  msgerChat.scrollTop += 500;
+  scroll();
 }
 
 function botResponse() {
@@ -177,7 +177,12 @@ function appendTyping(img, side) {
 
   msgerChat.insertAdjacentHTML("beforeend", msgHTML);
   msgerdeskChat.insertAdjacentHTML("beforeend", msgdeskHTML);
-  msgerChat.scrollTop += 500;
+  scroll()
+}
+
+function scroll (){
+  msgerChat.scrollTop = msgerChat.scrollHeight;
+  msgerdeskChat.scrollTop = msgerdeskChat.scrollHeight;
 }
 
 
