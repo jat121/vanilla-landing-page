@@ -1094,6 +1094,10 @@
         font-size: 16px !important;
     }
 
+    .dummy-box {
+        width: 40px !important;
+    }
+
     #joined {
         font-size: 1rem !important;
     }

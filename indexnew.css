@@ -77,6 +77,7 @@ img {
 .logo-container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
 }
 
@@ -839,6 +840,11 @@ img {
     height: 40px;
 }
 
+.dummy-box{
+    margin: 1rem; 
+    width: 26px;
+}
+
 
 .logo-box-desktop {
     width: 26px;
@@ -856,6 +862,7 @@ img {
     display: flex;
     width: 100%;
     align-items: center;
+    justify-content: space-between;
 }
 
 .profile-box-desktop {
