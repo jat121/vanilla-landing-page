@@ -5,6 +5,23 @@ var _name = "";
 let _username = "";
 var _url = ""
 var _profile_pic = "";
+
+function getCookie(cname) {
+    let name = cname + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(";");
+    for (let i = 0; i < ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) == " ") {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+  }
+
 fetch("./flags.json")
     .then((res) => res.json())
     .then((data) => {
@@ -55,6 +72,9 @@ fetch("./flags.json")
         _username = username;
         _profile_pic = profile_pic;
         _url = url;
+
+        let currentCookie = getCookie(_username);
+
         const usernameElement = document.getElementById("user-name-mobile");
         const usernamedesktopElement = document.getElementById("user-name-desktop");
         const singupElement = document.getElementById("signup-user");
@@ -68,11 +88,18 @@ fetch("./flags.json")
 
         const not = document.getElementById("notification");
         const notDesk = document.getElementById("notification-desk");
-
-        not.innerText = `We have notified ${_name} that you've joined the chat.
-        Please verify your account to enable message sending.`
-        notDesk.innerText = `We have notified ${_name} that you've joined the chat.
-        Please verify your account to enable message sending.`
+        
+        if(currentCookie) {
+            not.innerText = `${_name} left chat, if you want to join conversation please login or register.`;
+            notDesk.innerText = `${_name} left chat, if you want to join conversation please login or register.`;
+            notDesk.style = "font-size: 9px;"
+        } else {
+            not.innerText = `We have notified ${_name} that you've joined the chat.
+            Please verify your account to enable message sending.`
+            notDesk.innerText = `We have notified ${_name} that you've joined the chat.
+            Please verify your account to enable message sending.`
+        }
+        
 
         usernameElement.innerText = name;
         usernamedesktopElement.innerText = name;

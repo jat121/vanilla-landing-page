@@ -55,6 +55,10 @@
     border-color: #e5e7eb;
 }
 
+.p-10 {
+    padding-bottom: 10px !important;
+}
+
 .modal {
     display: none;
 
